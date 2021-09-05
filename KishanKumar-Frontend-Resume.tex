@@ -1,0 +1,297 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Kishan}{Kumar}{ \urlstyle{same}\href{http://kishans.in}{kishans.in }| 
+\href{mailto:kishansharma1231@gmail.com}{kishansharma1231@gmail.com} |\href{tel:+91-9521875124}{+91-9521875124} 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.28\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+
+\textbullet JavaScript \textbullet TypeScript  \textbullet{} HTML5 \\ \textbullet CSS3 \textbullet{} Dart \textbullet SQL \textbullet{} C++ 
+\sectionsep
+
+\subsection{Framework / Libraries}
+ \textbullet React \textbullet{}   Next.js\\ \textbullet{} Redux 
+  \textbullet{} Flutter \textbullet{} NestJS
+\sectionsep
+\subsection{Tools}
+ \textbullet Git \textbullet{}   GitHub \textbullet{} Trello\\ \textbullet{} VSCode  \textbullet{} Google 
+\sectionsep
+ \subsection{CS Fundamentals}
+ \textbullet{}   Data Structures and Algorithms \\ \textbullet{DBMS} \textbullet{OOPs} \\ \textbullet{Problem Solving}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+
+Website:// \href{https://kishans.in}{\bf kishans.in} \\
+GitHub:// \href{https://github.com/kishanhitk}{\bf kishanhitk} \\
+Blog:// \href{https://blog.kishans.in}{\bf blog.kishans.in} \\
+LinkedIn://  \href{https://www.linkedin.com/in/kishanju}{\bf kishanju} \\
+Twitter://  \href{https://twitter.com/jst_kishan}{\bf @jst\_kishan} \\
+CodeChef:// (\textbf{3 Star} ) \href{https://www.codechef.com/users/ju_guy}{\bf @ju\_guy} \\
+LeetCode:// \href{https://leetcode.com/kishanhitk/}{\bf kishanhitk} \\
+Medium:// \href{https://medium.com/@jst_kishan}{\bf @jst\_kishan} \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+
+
+% \subsection{Undergraduate}
+% Information Retrieval \\
+% Operating Systems \\
+% Artificial Intelligence + Practicum \\
+% Functional Programming \\
+% Computer Graphics + Practicum \\
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+% Unix Tools and Scripting \\
+
+
+
+\section{Blogs}
+
+\href{https://blog.kishans.in/why-you-should-start-using-nextjs-in-2021}{\textbullet   Why you should start using Next.js in 2021.}
+
+\sectionsep
+\section{Education} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Jadavpur University}
+\descript{Bachelor of Engineering}
+% \descript{B.E. in Printing Engineering}
+\location{CGPA 7.96 }
+\location{ July 2018 - Present}
+Kolkata, India\\
+\sectionsep
+
+\subsection{Vidyapati College}
+\descript{XII from B.S.E.B.}
+\location{ 2017} 
+Bihar, India\\
+\sectionsep
+
+\subsection{St. Joseph's}
+\descript{X from C.B.S.E.}
+\location{CGPA 10 - 2015} 
+Bihar, India\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.67\textwidth} 
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{ProjectGram}
+\descript{\href{https://projectgram.vercel.app/}{\textbf{| Visit}}
+\href{https://github.com/kishanhitk/projectgram}{ \textbf{| Source Code}}}
+% \descript{| Project Showcasing Website}
+
+ProjectGram is \textbf{Full-Stack, Open-Source} portfolio-based platform to share that side project of yours with the World.
+\\
+\location{Technologies Used:}
+\vspace{\topsep} % Hacky fix f or awkward extra vertical space
+\begin{tightemize}
+\item Frontend - \textbf{Next.js (React) and Chakra UI }
+\item Backend - \textbf {NestJS (Express)}, Database - \textbf {PostgreSQL}
+\item \textbf {100\% TypeScript}
+\end{tightemize}
+\sectionsep
+
+
+
+\runsubsection{JUMS Reboot}
+% \descript{| Flutter App with custom Express Backend}
+\descript{| \href{https://play.google.com/store/apps/details?id=com.kishans.jumsRebootFlutter}{\bf{{ Download App}}} \href{https://github.com/kishanhitk/jumsRebootFlutter}{ \bf{| Source Code}}}
+An app for Jadavpur University students to get their Admit cards, Grade cards, exam routines, etc. instantly. \textbf{500+ Downloads and 4.9 Star} on Google Play Store.\\
+\location{Technologies Used:}
+\begin{tightemize}
+\item \textbf{Flutter}
+\item \textbf{NodeJS, ExpressJS} for backend server. Deployed on \textbf{Heroku.}
+\item \textbf{Puppeteer} for running headless chrome in backend for scraping data.
+\item \textbf{Codemagic} for \textbf{Continous Deplyoment}
+\end{tightemize}
+\sectionsep
+
+
+% \runsubsection{Stroll}
+% \descript{| The Dev Extension}
+% \location{}
+% Stroll automatically strolls you to most accepted answer on Stack Overflow, saving your 30 seconds every day. \href{http://stroll-land.vercel.app/}{\textbf{| Try it!}} \href{https://github.com/kishanhitk/stroll}{ \textbf{| Source Code}}
+% \\
+% \location{Technologies Used:}
+% \begin{tightemize}
+% \item \textbf{Manifest v3}
+% \item \textbf{JavaScript}
+% \item \textbf Landing Page built with \textbf{Next.js} and\textbf{ Particle.js}
+% \end{tightemize}
+% \sectionsep
+
+\runsubsection{SafeChat}
+% \descript{| Instant Messaging}
+\descript{\href{https://safechat-next.vercel.app}{\textbf{| Try it! |}} \href{https://github.com/kishanhitk/safechat_next}{ \textbf{Source Code}}}
+A community based chat app. Always stay connected with your communities.\\
+\location{Technologies Used:}
+\begin{tightemize}
+\item \textbf{Next.js with 100\% TypeScript | ChakraUI for styling.}
+\item \textbf{Firebase as BaaS}
+\end{tightemize}
+\sectionsep
+\href{https://kishans.in/projects}{\bf{See More Projects.....}}
+
+% \runsubsection{Project-Hunt Backend}
+% \descript{| NestJS Backend for Project-Hunt}
+% \location{}
+% Backend for Project-Hunt, a project showcase website, where users can upload their projects and other users can upvote their projects. More info on project README. \href{https://github.com/amitchaudhari9121/project-hunt}{ \bf{| Source Code.}}
+% \\
+% \location{Technologies Used:}
+% \begin{tightemize}
+% \item \textbf{NestJS + TS}
+% \item \textbf{PostreSQL} with {TypeORM}
+% \item \textbf{Passport} for authentication
+% \end{tightemize}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Internships}
+
+\runsubsection{DigiMall}
+\descript{| Flutter Developer }
+\location{Feb 2020 – May 2020 | Gurugram - Remote}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed and released \href{https://play.google.com/store/apps/details?id=com.business.prachar}{\textbf{the DigiMall}} app.
+\item Added \textbf{location based data fetching} strategy to show nearby stores. 
+\item Fixed many major bugs and delivered \textbf{99\% Crash-Free} app to Play Store
+\item Worked on light-weight \textbf{PWA} built with \textbf{React}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{The Loot}
+\descript{| Flutter Developer }
+\location{Oct 2020 – Dec 2020 | Coimbatore - Remote}
+\begin{tightemize}
+\item Wrote and reviewed code for \href{https://play.google.com/store/apps/details?id=com.arette.students}{\textbf{The Loot}} app.
+\item Used \textbf{BLoC} pattern for state management. 
+\item Integerated \textbf{CI/CD} tools and published to \textbf{Play Store}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Actinide Ltd.}
+\descript{| React Developer }
+\location{July 2020 – Oct 2020 | London, UK - Remote}
+\begin{tightemize}
+\item Developed \textbf{Assistroo}, a quiz app made with react.
+\item Used \textbf{Firebase} as BaaS and \textbf{redux} as state management solution. 
+\item Used \textbf{material-ui} for Material Design react components.
+\item Headed a team of three developers.
+\end{tightemize}
+\sectionsep
+\section{Achievements} 
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+\href{https://devpost.com/software/finlearn}{{\textbf{Winner team}} in \textbf{HooHacks 2021} hackathon organised by \textbf{MLH} and \textbf{University of Virginia}.}
+% \end{tightemize}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
